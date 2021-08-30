@@ -5,11 +5,11 @@ var CurrentChannel = false;
 var RefreshBot = false;
 
 RefreshWhitelist = () => {
-     console.log('^1 [MOXHA] ^4Refreshing BOT^0')
+     console.log('^1 [AlgerianRP] ^4Refreshing BOT^0')
      CurrentChannel && CurrentChannel.send(SendEmbed({
           description: 'Refreshing Bot',
           color : "#47ff00",
-          author: 'Refresh Whitelist'
+          author: 'AlgerianRP'
      }))
      client.destroy(config.token);
      setTimeout(() => {}, 0);
@@ -20,9 +20,9 @@ RefreshWhitelist = () => {
 
 StartBot = () => {
      client.on('ready', () => {
-          !RefreshBot && console.log('^1 [MOXHA] ^2Bot Is Ready^0')
+          !RefreshBot && console.log('^1 [AlgerianRP] ^2Bot Is Ready^0')
           if (RefreshBot) {
-               console.log('^1 [MOXHA] ^6Refreshed Bot^0')
+               console.log('^1 [AlgerianRP] ^6Refreshed Bot^0')
                CurrentChannel && CurrentChannel.send(SendEmbed({
                     description: 'Refreshed Bot',
                     color : "#0094ff",
@@ -61,7 +61,7 @@ StartBot = () => {
      client.on('message', msg => {
           CurrentChannel = msg.channel;
           var embed = new Discord.MessageEmbed()
-          .setFooter('Made By MOXHA')
+          .setFooter('Made By Radhwane')
           if (msg.content.startsWith(config.prefix)) {
                var args = msg.content.substring().split(" ");
                if (msg.member.roles.find((search) => search.id == config.admin_roleid)) {
