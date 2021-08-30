@@ -1,9 +1,9 @@
 {
      "token": "",
      "prefix": "!",
-     "admin_roleid": "",
+     "admin_roleid": "845797161513254942",
      "discord_whitelist": {
-          "active": true,
+          "active": false,
           "role_id": "",
           "server_id": ""
      },
